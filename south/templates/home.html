@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .dashboard-section h2 {
+            margin-top: 0;
+        }
+        .dashboard-section a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: green;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .dashboard-section a:hover {
+            background-color: #d9d9d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Ntsoekhe Patient Management System</h1>
+
+        <!-- Local Patients Section -->
+        <div class="dashboard-section">
+            <h2>Local Patients</h2>
+            <a href="{{ url_for('list_local_patients') }}">View Local Patients</a>
+        </div>
+
+        <!-- All Country Patients Section -->
+        <div class="dashboard-section">
+            <h2>All Country Patients</h2>
+            
+            <a href="{{ url_for('all_patients') }}">View All Country Patients</a>
+        </div>
+    </div>
+</body>
+</html>

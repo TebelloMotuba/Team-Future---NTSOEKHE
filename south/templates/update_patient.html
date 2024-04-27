@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Patient</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+</head>
+<body>
+    <h1>Update Patient</h1>
+    <form action="" method="post">
+        <input type="text" name="first_name" value="{{ patient.first_name }}" required><br>
+        <input type="text" name="last_name" value="{{ patient.last_name }}" required><br>
+        <input type="number" name="contacts" value="{{ patient.contacts }}" required><br>
+        <input type="text" name="location" value="{{ patient.location }}" required><br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="{{ url_for('all_patients') }}">Back to List</a>
+</body>
+</html>
