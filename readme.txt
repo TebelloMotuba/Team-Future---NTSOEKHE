@@ -8,12 +8,12 @@ Python with FLASK (for building an application)
 SQLite (for local storage)
 RESTful APIs (for internode communication)
 
-What the files contains:
-Three folders(central/north/south) representing each node. 
 
-Step by step guide to running this database:
+The three folders(central/north/south) each represent a node. 
 
-1. The user should extract the files and add all the three folders each to visual studio 
+Step by step guide to running this project:
+
+1. Add all the three folders each to visual studio 
 code ( the environment we have used. It is necessary to install python extensions: python and python debugger).
 
 2. Create a virtual environment on each folder. 
