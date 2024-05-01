@@ -56,44 +56,43 @@ Open your terminal or command prompt and navigate to the directory where you wan
    
    iii) Select "Python: Create environment".
    
-   iv) Select a folder for which to create a virtual environment.
+   iv) You will be asked to select the environment type. Select "Venv creates a '.venv'...".
+
+   v) Select a folder for which to create a virtual environment.
    
-   v) Select "Venv creates a '.venv'...".
+   vi) You will be asked to select a python installation. Select the latest python version from the list.
    
-   vi) Select the latest python version from the list.
+   vii) You will then be asked to select dependencies to install. Click on "requirements.txt" and click "ok".
    
-   vii) You will then be asked to select dependencies to install. Click on requirements.txt and click "ok".
-   
-   viii) This will install the dependencies for this project such as flask and 
+   viii) This will install the dependencies for this project such as flask and requests API.
 
     
    
 
-4. Run each node's Flask application in separate terminals:
+6. Run each node's Flask application in separate terminals:
    
-   Copy the following code to run South:
+  Navigate to the project directory and execute the following code to run node South:
 ```bash
 cd south
 python app.py
 ```
+It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from South node.
 
-On a different terminal navigate to the project directory then copy  following code to run North:
+On a different terminal, navigate to the project directory then execute the following code to run node North:
 ```bash
 cd north
 python app.py
 ```
-Copy the following code to run Central:
+It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from North node.
+
+On a different terminal, navigate to the project directory then execute the following code to run node Central:
 ```bash
 cd central
 python app.py
 ```
-5. Open your web browser and go to the respective ports for each node to access the healthcare system:
-   
-   South: http://localhost:5000
-   
-   Central: http://localhost:5001
-   
-   North: http://localhost:5002
+It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from Central node.
+
+
 
 
 
