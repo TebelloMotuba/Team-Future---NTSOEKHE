@@ -1,7 +1,7 @@
 # Project Overview
 This project aims to develop a basic distributed database management system, Ntsoekhe,  specifically tailored for use in the digital health sector. It should enable secure, efficient handling  and storage of a patient's health data across multiple distributed nodes, ensuring data integrity,  availability, and confidentiality.
 
-The database is fragmented horizontally based on location/region. No replication. Each node stores its data locally using SQLite. Central node stores the patients information for patients residing in the central resgion of Lesotho. South node for South region patients and North node for North region patients.
+The database has one relation named "patients" and it is fragmented horizontally based on location/region. No replication. Each node stores its data locally using SQLite. Central node stores the patients information for patients residing in the central resgion of Lesotho. South node for South region patients and North node for North region patients.
 The achitecture used is peer-to-peer, with all nodes being equal and each node having its own server.
 
 # Tools Used:
@@ -16,7 +16,8 @@ The achitecture used is peer-to-peer, with all nodes being equal and each node h
 
 # Requirements/ Installations
 1. **Download and install git from the official website.**
-    *You can download it here:*
+   
+    *Can be downloaded here:*
   ```bash
      https://git-scm.com/download
   ```
@@ -30,7 +31,7 @@ The achitecture used is peer-to-peer, with all nodes being equal and each node h
      C:\Program Files\Git\cmd\ to the end of the list.
    - Close and re-open your console.
 
-2. **Download and install python 3.8. or latest version.**
+2. **Download and install python 3.11.9 or latest version.**
 
    *Can be downloaded here:*
    ```bash
@@ -108,21 +109,29 @@ python app.py
 It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from Central node.
 
 # Usage
-**Adding a New Patient Record:** 
+**-Displaying the list of patients:**
+
+The home page gives a doctor an option to view either local (current region) patients or all country patients.
+On viewing all country patients, the node communicates with other nodes through requests (RESTful API) to retrieve thier database records in order to display all patients from all the three nodes.
+
+**-Searching for Patient Records:** 
+
+After choosing any of the two lists, the user can use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click "Search" to view matching results. This is necessary in cases where the patient list is too long.
+
+**-Adding a New Patient Record:** 
 
 Click on the "Add New Patient" button and fill out the required fields in the form. Select the patient's location from the dropdown list (South, Central, or North) and click "Submit" to add the record.
 
-**Updating a Patient Record:** 
+*Currently, the doctors are allowed to add patients only at their nodes. We are yet to finalise and make a decision on whether it is necessary for a doctor who is in the South region to add a patient residing in the North.*
 
-Click on the "Update" button next to the patient record you want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click "Save Changes" to update the record.
+**-Updating a Patient Record:** 
 
-**Searching for Patient Records:** 
+Click on the "Update" button next to the patient record that they want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click "Save Changes" to update the record. 
 
-Use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click "Search" to view matching results.
 
-**Deleting a Patient Record:** 
+**-Deleting a Patient Record:** 
 
-Click on the "Delete" button next to the patient record you want to remove. Confirm the deletion when prompted
+Click on the "Delete" button next to the patient record you want to remove. Confirm the deletion when prompted.
 
 
 
