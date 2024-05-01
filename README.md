@@ -37,28 +37,38 @@ Open your terminal or command prompt and navigate to the directory where you wan
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
 4. Add each of the folders to the visual studio code workspace. Follow these steps:
+
     i) Launch VSC
+   
     ii) Click on "File" from the options on the tittle bar.
+   
     iii) Click on "Add Folder". A file explorer window will open, allowing you to navigate to the folder you want to add to the workspace.
+   
    Navigate to the project directory and select one of the folders (north, south or central).
+   
     iv)  Click on "File" again to add the other folder to the workspace. Click on "Add Folder to Workspace". Select one of the two remaining folders.
          Repeat this for the other remaining folder.
 5. Create virtual environments in VSC for each of the folders. Follow these steps:
+   
    i) On the title bar click on "view", click "Command Palette" on the dropdown options.
-   ii) On the text field that appears type "python: create..."
+   
+   ii) On the text field that appears type "python: create...".
+   
    iii) Select "Python: Create environment".
+   
    iv) Select a folder for which to create a virtual environment.
+   
    v) Select "Venv creates a '.venv'...".
+   
    vi) Select the latest python version from the list.
-   vii) You will then be asked to select dependencies to install. Click on requirements.txt and click ok.
+   
+   vii) You will then be asked to select dependencies to install. Click on requirements.txt and click "ok".
+   
    viii) This will install the dependencies for this project such as flask and 
 
     
    
-   Copy the following code:
-  ```bash
-  cd Team-Future---NTSOEKHE
-  ```
+
 4. Run each node's Flask application in separate terminals:
    
    Copy the following code to run South:
