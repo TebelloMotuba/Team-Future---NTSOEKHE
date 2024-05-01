@@ -4,7 +4,13 @@ This project aims to develop a basic distributed database management system, Nts
 The database has three nodes. The folders contains the three folders representing each node. 
 
 # Requirements/ Installations
-To be able to use the files, the user should download all files and add all the three folders each to visual studio code ( the environment we have used. It is necessary to install python extensions; python and python debugger).
+1. Clone the repository:
+Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
+
+  ```bash
+  
+   git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
+  ```
 
 Create a virtual environment on each folder. They should then run the following command on the python terminal in the virtual environment:
 "python -m pip install -r requirements.txt" 
