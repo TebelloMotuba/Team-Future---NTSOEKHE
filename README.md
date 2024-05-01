@@ -11,6 +11,28 @@ Open your terminal or command prompt and navigate to the directory where you wan
   
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
+2. Navigate to the project directory:
+   Copy the following code:
+  ```bash
+  cd TeamFuture-Ntsoekhe
+  ```
+3. Run each node's Flask application in separate terminals:
+   Copy the following code running South:
+```bash
+cd South
+python app.py
+```
+
+Copy the following code for running North:
+```bash
+cd North
+python app.py
+```
+Copy the following code for running Central:
+```bash
+cd Central
+python app.py
+```
 
 Create a virtual environment on each folder. They should then run the following command on the python terminal in the virtual environment:
 "python -m pip install -r requirements.txt" 
