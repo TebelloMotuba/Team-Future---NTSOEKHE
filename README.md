@@ -28,7 +28,7 @@ Follow these steps to ensure that git will be recognised as a command in your te
    https://www.python.org/downloads/
    ```
 
-2. Clone the repository:
+3. Clone the repository:
    
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
 
@@ -36,7 +36,18 @@ Open your terminal or command prompt and navigate to the directory where you wan
   
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
-3. Navigate to the project directory:
+4. Add each of the folders to the visual studio code workspace. Follow these steps:
+    i) Launch VSC
+    ii) Click on "File" from the options on the tittle bar.
+    iii) Click on "Add Folder". A file explorer window will open, allowing you to navigate to the folder you want to add to the workspace.
+   Navigate to the project directory and select one of the folders (north, south or central).
+    iv)  Click on "File" again to add the other folder to the workspace. Click on "Add Folder to Workspace". Select one of the two remaining folders.
+         Repeat this for the other remaining folder.
+5. Create virtual environments in VSC for each of the folders. Follow these steps:
+   i) On the title bar click on "view", click "Command Palette" on the dropdown options. On the text field that appears type "python: create..."
+      Select "Python: Create environment". Select "Venv creates a '.venv'...". Select the latest python version from the list. You will then be asked to select dependencies to install
+
+    
    
    Copy the following code:
   ```bash
