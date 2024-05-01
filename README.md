@@ -1,7 +1,7 @@
 # Project Overview
 This project aims to develop a basic distributed database management system, Ntsoekhe,  specifically tailored for use in the digital health sector. It should enable secure, efficient handling  and storage of a patient's health data across multiple distributed nodes, ensuring data integrity,  availability, and confidentiality.
 
-The database is fragmented horizontally based on location/region. No replication. Each node stores its data locally using SQLite. Central node stores the patients information or patients residing in the central resgion of Lesotho. South node for South region patients and North node for North region patients.
+The database is fragmented horizontally based on location/region. No replication. Each node stores its data locally using SQLite. Central node stores the patients information for patients residing in the central resgion of Lesotho. South node for South region patients and North node for North region patients.
 The achitecture used is peer-to-peer, with all nodes being equal and each node having its own server.
 
 # Tools Used:
@@ -15,12 +15,12 @@ The achitecture used is peer-to-peer, with all nodes being equal and each node h
 -Visual Studio Code (the development environment)
 
 # Requirements/ Installations
-1. Download and install git from the official website.
-    You can download it here:
+1. **Download and install git from the official website.**
+    *You can download it here:*
   ```bash
      https://git-scm.com/download
   ```
-Follow these steps to ensure that git will be recognised as a command in your terminal or command prompt:
+*Follow these steps to ensure that git will be recognised as a command in your terminal or command prompt:*
 
    - In the Start Menu or taskbar search, search for "environment variable".
    - Select "Edit the system environment variables".
@@ -30,14 +30,14 @@ Follow these steps to ensure that git will be recognised as a command in your te
      C:\Program Files\Git\cmd\ to the end of the list.
    - Close and re-open your console.
 
-2. Download and install python 3.8. or latest version.
+2. **Download and install python 3.8. or latest version.**
 
-   Can be downloaded here:
+   *Can be downloaded here:*
    ```bash
    https://www.python.org/downloads/
    ```
 
-3. Clone the repository:
+3. **Clone the repository:**
    
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
 
@@ -45,40 +45,46 @@ Open your terminal or command prompt and navigate to the directory where you wan
   
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
-4. Add each of the folders to the visual studio code workspace. Follow these steps:
 
-    i) Launch VSC
+The project folder containing all the files will be created on the directory you have specified.
+
+4. **Add each of the folders to the visual studio code workspace.**
+    *Follow these steps:*
+
+    - Launch VSC
    
-    ii) Click on "File" from the options on the tittle bar.
+    - Click on "File" from the options on the tittle bar.
    
-    iii) Click on "Add Folder". A file explorer window will open, allowing you to navigate to the folder you want to add to the workspace.
+    - Click on "Add Folder". A file explorer window will open, allowing you to navigate to the folder you want to add to the workspace.
    
-   Navigate to the project directory and select one of the folders (north, south or central).
+      Navigate to the project directory and select one of the folders (north, south or central).
    
-    iv)  Click on "File" again to add the other folder to the workspace. Click on "Add Folder to Workspace". Select one of the two remaining folders.
+    -  Click on "File" again to add the other folder to the workspace. Click on "Add Folder to Workspace". Select one of the two remaining folders.
          Repeat this for the other remaining folder.
-5. Create virtual environments in VSC for each of the folders. Follow these steps:
+6. **Create virtual environments in VSC for each of the folders.**
+  
+   *Follow these steps:*
    
-   i) On the title bar click on "view", click "Command Palette" on the dropdown options.
+   - On the title bar click on "view", click "Command Palette" on the dropdown options.
    
-   ii) On the text field that appears type "python: create...".
+   - On the text field that appears type "python: create...".
    
-   iii) Select "Python: Create environment".
+   - Select "Python: Create environment".
    
-   iv) You will be asked to select the environment type. Select "Venv creates a '.venv'...".
+   - You will be asked to select the environment type. Select "Venv creates a '.venv'...".
 
-   v) Select a folder for which to create a virtual environment.
+   - Select a folder for which to create a virtual environment.
    
-   vi) You will be asked to select a python installation. Select the latest python version from the list.
+   - You will be asked to select a python installation. Select the latest python version from the list.
    
-   vii) You will then be asked to select dependencies to install. Click on "requirements.txt" and click "ok".
+   - You will then be asked to select dependencies to install. Click on "requirements.txt" and click "ok".
    
-   viii) This will install the dependencies for this project such as flask and requests API.
+   - This will install the dependencies for this project such as flask and requests API.
 
     
    
 
-6. Run each node's Flask application in separate terminals:
+7. **Run each node's Flask application in separate terminals:**
    
   Navigate to the project directory and execute the following code to run node South:
 ```bash
@@ -101,7 +107,22 @@ python app.py
 ```
 It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from Central node.
 
+# Usage
+**Adding a New Patient Record:** 
 
+Click on the "Add New Patient" button and fill out the required fields in the form. Select the patient's location from the dropdown list (South, Central, or North) and click "Submit" to add the record.
+
+**Updating a Patient Record:** 
+
+Click on the "Update" button next to the patient record you want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click "Save Changes" to update the record.
+
+**Searching for Patient Records:** 
+
+Use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click "Search" to view matching results.
+
+**Deleting a Patient Record:** 
+
+Click on the "Delete" button next to the patient record you want to remove. Confirm the deletion when prompted
 
 
 
