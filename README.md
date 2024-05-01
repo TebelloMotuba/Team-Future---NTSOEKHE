@@ -109,27 +109,27 @@ python app.py
 It will generate a url at which it is running. Copy it and paste it in the browser to access the healthcare system from Central node.
 
 # Usage
-**-Displaying the list of patients:**
+-**Displaying the list of patients:**
 
 The home page gives a doctor an option to view either local (current region) patients or all country patients.
 On viewing all country patients, the node communicates with other nodes through requests (RESTful API) to retrieve thier database records in order to display all patients from all the three nodes.
 
-**-Searching for Patient Records:** 
+-**Searching for Patient Records:** 
 
 After choosing any of the two lists, the user can use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click "Search" to view matching results. This is necessary in cases where the patient list is too long.
 
-**-Adding a New Patient Record:** 
+-**Adding a New Patient Record:** 
 
 Click on the "Add New Patient" button and fill out the required fields in the form. Select the patient's location from the dropdown list (South, Central, or North) and click "Submit" to add the record.
 
 *Currently, the doctors are allowed to add patients only at their nodes. We are yet to finalise and make a decision on whether it is necessary for a doctor who is in the South region to add a patient residing in the North.*
 
-**-Updating a Patient Record:** 
+-**Updating a Patient Record:** 
 
 Click on the "Update" button next to the patient record that they want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click "Save Changes" to update the record. 
 
 
-**-Deleting a Patient Record:** 
+-**Deleting a Patient Record:** 
 
 Click on the "Delete" button next to the patient record you want to remove. Confirm the deletion when prompted.
 
