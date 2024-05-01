@@ -14,7 +14,7 @@ Open your terminal or command prompt and navigate to the directory where you wan
 2. Navigate to the project directory:
    Copy the following code:
   ```bash
-  cd Team-Future---Ntsoekhe
+  cd Team-Future---NTSOEKHE
   ```
 3. Run each node's Flask application in separate terminals:
    Copy the following code running South:
@@ -25,7 +25,7 @@ python app.py
 
 Copy the following code for running North:
 ```bash
-cd cd ../north
+cd ../north
 python app.py
 ```
 Copy the following code for running Central:
@@ -34,9 +34,12 @@ cd ../central
 python app.py
 ```
 4. Open your web browser and go to the respective ports for each node to access the healthcare system:
-South: http://localhost:5000
-Central: http://localhost:5001
-North: http://localhost:5002
+   
+   South: http://localhost:5000
+   
+   Central: http://localhost:5001
+   
+   North: http://localhost:5002
 
 
 
