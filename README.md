@@ -4,19 +4,24 @@ This project aims to develop a basic distributed database management system, Nts
 The database has three nodes. The folders contains the three folders representing each node. 
 
 # Requirements/ Installations
-1. Clone the repository:
+1. Download and install git from the official website.
+    You can download it here:
+  ```bash
+     https://git-scm.com/download/win
+  ```
+2. Clone the repository:
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
 
   ```bash
   
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
-2. Navigate to the project directory:
+3. Navigate to the project directory:
    Copy the following code:
   ```bash
   cd Team-Future---NTSOEKHE
   ```
-3. Run each node's Flask application in separate terminals:
+4. Run each node's Flask application in separate terminals:
    Copy the following code running South:
 ```bash
 cd south
@@ -33,7 +38,7 @@ Copy the following code for running Central:
 cd ../central
 python app.py
 ```
-4. Open your web browser and go to the respective ports for each node to access the healthcare system:
+5. Open your web browser and go to the respective ports for each node to access the healthcare system:
    
    South: http://localhost:5000
    
