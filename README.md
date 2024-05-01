@@ -25,7 +25,7 @@ Follow these steps to ensure that git will be recognised as a command in your te
    - Select "Edit the system environment variables".
    - Click the "Environment Variables" button at the bottom.
    -Double-click the "Path" entry under "System variables".
-   - With the "New" button in the PATH editor, add C:\Program Files\Git\bin\ and
+   -With the "New" button in the PATH editor, add C:\Program Files\Git\bin\ and
      C:\Program Files\Git\cmd\ to the end of the list.
    - Close and re-open your console.
 
