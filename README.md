@@ -1,7 +1,8 @@
 # Project Overview
-This project aims to develop a basic distributed database management system, Ntsoekhe,  specifically tailored for use in the digital health sector. It should enable secure, efficient handling  and storage of health-related data across multiple distributed nodes, ensuring data integrity,  availability, and confidentiality
+This project aims to develop a basic distributed database management system, Ntsoekhe,  specifically tailored for use in the digital health sector. It should enable secure, efficient handling  and storage of a patient's health data across multiple distributed nodes, ensuring data integrity,  availability, and confidentiality.
 
-The database has three nodes. The folders contains the three folders representing each node. 
+The database is fragmented horizontally based on location/region. No replication. Each node stores its data locally using SQLite. Central node stores the patients information or patients residing in the central resgion of Lesotho. South node for South region patients and North node for North region patients.
+The achitecture used is peer-to-peer, with all nodes being equal and each node having its own server.
 
 # Tools Used:
 
