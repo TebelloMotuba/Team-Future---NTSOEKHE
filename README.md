@@ -18,6 +18,7 @@ Open your terminal or command prompt and navigate to the directory where you wan
    git clone https://github.com/TebelloMotuba/Team-Future---NTSOEKHE
   ```
 3. Navigate to the project directory:
+   
    Copy the following code:
   ```bash
   cd Team-Future---NTSOEKHE
@@ -30,14 +31,14 @@ cd south
 python app.py
 ```
 
-Copy the following code to run North:
+On a different terminal navigate to the project directory then copy  following code to run North:
 ```bash
-cd ../north
+cd north
 python app.py
 ```
 Copy the following code to run Central:
 ```bash
-cd ../central
+cd central
 python app.py
 ```
 5. Open your web browser and go to the respective ports for each node to access the healthcare system:
