@@ -10,6 +10,7 @@ The database has three nodes. The folders contains the three folders representin
      https://git-scm.com/download
   ```
 2. Clone the repository:
+   
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
 
   ```bash
@@ -22,18 +23,19 @@ Open your terminal or command prompt and navigate to the directory where you wan
   cd Team-Future---NTSOEKHE
   ```
 4. Run each node's Flask application in separate terminals:
-   Copy the following code running South:
+   
+   Copy the following code to run South:
 ```bash
 cd south
 python app.py
 ```
 
-Copy the following code for running North:
+Copy the following code to run North:
 ```bash
 cd ../north
 python app.py
 ```
-Copy the following code for running Central:
+Copy the following code to run Central:
 ```bash
 cd ../central
 python app.py
