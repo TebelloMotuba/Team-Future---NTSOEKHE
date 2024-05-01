@@ -7,7 +7,7 @@ The database has three nodes. The folders contains the three folders representin
 1. Download and install git from the official website.
     You can download it here:
   ```bash
-     https://git-scm.com/download/win
+     https://git-scm.com/download
   ```
 2. Clone the repository:
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
