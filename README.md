@@ -3,12 +3,31 @@ This project aims to develop a basic distributed database management system, Nts
 
 The database has three nodes. The folders contains the three folders representing each node. 
 
+# Tools Used:
+
+-Python with FLASK (for building an application)
+
+-SQLite (for local storage)
+
+-RESTful APIs (for internode communication)
+
+-Visual Studio Code (the development environment)
+
 # Requirements/ Installations
 1. Download and install git from the official website.
     You can download it here:
   ```bash
      https://git-scm.com/download
   ```
+Follow these steps to ensure that git will be recognised as a command in your terminal or command prompt:
+
+2. Download and install python 3.8. or latest version.
+
+   Can be downloaded here:
+   ```bash
+   https://www.python.org/downloads/
+   ```
+
 2. Clone the repository:
    
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command followed by the URL of the GitHub repository:
