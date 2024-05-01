@@ -21,6 +21,13 @@ The database has three nodes. The folders contains the three folders representin
   ```
 Follow these steps to ensure that git will be recognised as a command in your terminal or command prompt:
 
+   - In the Start Menu or taskbar search, search for "environment variable".
+   - Select "Edit the system environment variables".
+   - Click the "Environment Variables" button at the bottom.
+   -Double-click the "Path" entry under "System variables".
+   - With the "New" button in the PATH editor, add C:\Program Files\Git\bin\ and C:\Program Files\Git\cmd\ to the end of the list.
+   - Close and re-open your console.
+
 2. Download and install python 3.8. or latest version.
 
    Can be downloaded here:
