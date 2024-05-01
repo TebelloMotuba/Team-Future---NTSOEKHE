@@ -44,8 +44,14 @@ Open your terminal or command prompt and navigate to the directory where you wan
     iv)  Click on "File" again to add the other folder to the workspace. Click on "Add Folder to Workspace". Select one of the two remaining folders.
          Repeat this for the other remaining folder.
 5. Create virtual environments in VSC for each of the folders. Follow these steps:
-   i) On the title bar click on "view", click "Command Palette" on the dropdown options. On the text field that appears type "python: create..."
-      Select "Python: Create environment". Select "Venv creates a '.venv'...". Select the latest python version from the list. You will then be asked to select dependencies to install
+   i) On the title bar click on "view", click "Command Palette" on the dropdown options.
+   ii) On the text field that appears type "python: create..."
+   iii) Select "Python: Create environment".
+   iv) Select a folder for which to create a virtual environment.
+   v) Select "Venv creates a '.venv'...".
+   vi) Select the latest python version from the list.
+   vii) You will then be asked to select dependencies to install. Click on requirements.txt and click ok.
+   viii) This will install the dependencies for this project such as flask and 
 
     
    
