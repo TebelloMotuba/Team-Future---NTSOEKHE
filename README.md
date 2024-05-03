@@ -137,5 +137,66 @@ Click on the "Update" button next to the patient record that they want to modify
 
 Click on the "Delete" button next to the patient record you want to remove. Confirm the deletion when prompted.
 
+# Development
+The Flask application, defined in `app.py`, serves as the backend of the distributed database management system. Below is the break down of how each part of the code achieves the purpose of the project:
+
+1. **Initialization and Configuration:**
+   - The application is initialized and configured with Flask.
+   - A SQLite database, e.g `south.db`, is used for storing patient records.
+   - The `init_db()` function initializes the database by creating a `patients` table if it does not exist already.
+   - The `get_db_connection()` function establishes a connection to the SQLite database.
+  
+2. **Routes and Views:**
+
+- **Home Route (`'/'`):**
+   - Renders the home page (`home.html`) which provides navigation options to view all patients or add a new patient.
+
+- **Add Patient Route (`'/add_patients'`):**
+   - Accepts POST requests to add a new patient record to the local database.
+   - Generates a new patient ID based on the largest ID found across all nodes.
+   - Inserts the new patient record into the local database.
+   - Redirects to the route for displaying all patients.
+   - The `get_largest_patient_id()` function retrieves the largest patient ID across all nodes to generate a unique ID for a new patient.
+
+- **Get Patients JSON Route (`'/patients/json'`):**
+   - Returns JSON representation of all patients stored in the local database.
+   - The `list_patients_local()` function retrieves a list of patients stored locally on the current node.
+
+- **All Patients Route (`'/all_patients'`):**
+   - Fetches all patients from the local database and other nodes.
+   - The `list_patients_local()` function retrieves a list of patients stored locally on the current node.
+   - The `fetch_patients_from_nodes()` function fetches patient records from other nodes via RESTful APIs.
+   - Renders the page (`list_patients.html`) displaying a list of all patients.
+
+- **Search Patient Route (`'/search_patient'`):**
+   - Accepts POST requests with a search query.
+   - Searches for matching patient records in the local database and other nodes.
+   - Renders the page (`list_patients.html`) displaying search results.
+
+- **Update Patient Route (`'/update'`):**
+   - Accepts POST requests to update a patient record in the local database.
+   - Updates the patient record with the provided data (first name, last name, contacts, location).
+   - Also, forwards the update request to other nodes to ensure data consistency.
+   - The `update_patient()` function updates a patient's information in the local database when the form is submitted.
+   - The `update_patient_node()` function updates a patient's information on other nodes via RESTful APIs.
+
+- **Delete Patient Route (`'/delete/<int:id>'`):**
+   - Accepts POST requests to delete a patient record from the local database.
+   - The `delete_patient()` function deletes a patient with a specified ID from the local database and forwards the deletion request to other nodes.
+
+- **Delete Patient Node Route (`'/delete_patient'`):**
+   - Accepts POST requests to delete a patient record from other nodes.
+   - This route is used internally by other nodes to synchronize data deletion.
+   - The `delete_patient_node()` function deletes a patient from other nodes via RESTful APIs.
+   
+   
+3. **RESTful APIs:**
+   - The `/patients/json` route exposes a JSON endpoint to retrieve patient records.
+   - The `/update` and `/delete/<int:id>` routes handle patient update and deletion requests, respectively, using RESTful APIs.
+   
+4. **Node Communication:**
+   - Patient data is synchronized across nodes through inter-node communication using requests to exchange patient information.
+
+Each function within app.py is responsible for interacting with the local SQLite database, handling HTTP requests, and ensuring data consistency across distributed nodes. By implementing these routes and functions, the Flask application effectively manages patient data in a distributed environment, providing functionalities for adding, updating, searching, and deleting patient records while ensuring data integrity and availability.
 
 
