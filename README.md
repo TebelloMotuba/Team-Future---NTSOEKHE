@@ -121,17 +121,17 @@ On viewing all country patients, the node communicates with other nodes through 
 
 - **Searching for Patient Records:** 
 
-After choosing any of the two lists, the user can use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click `Search` to view matching results. This is necessary in cases where the patient list is too long.
+After choosing any of the two lists, the user can use the search form at the top of the page to search for patient records by name. Enter the patient's name in the search field and click `Search` button to view matching results. This is necessary in cases where the patient list is too long.
 
 - **Adding a New Patient Record:** 
 
-Click on the `Add New Patient` button and fill out the required fields in the form. Select the patient's location from the dropdown list (South, Central, or North) and click "Submit" to add the record.
+Click on the `Add New Patient` button and fill out the required fields in the form. Select the patient's location from the dropdown list (South, Central, or North) and click `Submit` button to add the record.
 
 *Currently, the doctors are allowed to add patients only at their nodes. We are yet to finalise and make a decision on whether it is necessary for a doctor who is in the South region to add a patient residing in the North.*
 
 - **Updating a Patient Record:** 
 
-Click on the `Update` button next to the patient record that they want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click `Save Changes` to update the record. 
+Click on the `Update` button next to the patient record that they want to modify. The update form will appear with the current details pre-filled. Make any necessary changes and click `Save Changes` button to update the record. 
 
 
 - **Deleting a Patient Record:** 
